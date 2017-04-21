@@ -1,0 +1,46 @@
+
+{% assign teacher = site.data.teachers[page.menu] %}
+<!--=== Container Part ===-->
+<div class="container content-sm">
+  <div class="row">
+    <!-- Social Network -->
+    <div class="col-md-4 md-margin-bottom-50">
+      <div class="box-shadow shadow-effect-2">
+        <img class="img-responsive img-bordered" src="{{ site.url }}/assets/img/teachers/{{teacher.photo }}" alt="">
+      </div>
+    </div>
+    <!-- End Social Network -->
+
+    <!-- Progress Bar -->
+    <div class="col-md-8 progress-box md-margin-bottom-50">
+      <div class="headline-left margin-bottom-30">
+        <h2 class="headline-brd heading-md">{{teacher.name}}<br><small class="text-uppercase">{{teacher.subject}}</small></h2>
+      </div>
+      <h3 class="heading-xs">Педагогический стаж <span class="pull-right  text-uppercase">{{ teacher.standing }}</span></h3>
+      <div class="progress progress-u progress-xxs">
+        <div class="progress-bar progress-bar-dark" role="progressbar" data-width="76">
+        </div>
+      </div>      
+
+      <h3 class="heading-xs">Опыт подготовки к ЕГЭ <span class="pull-right  text-uppercase">{{ teacher.experience }}</span></h3>
+      <div class="progress progress-u progress-xxs">
+        <div class="progress-bar progress-bar-dark" role="progressbar" data-width="76">
+        </div>
+      </div>
+
+      <h3 class="heading-xs">Образование <span class="pull-right text-uppercase">{{ teacher.education }}</span></h3>
+      <div class="progress progress-u progress-xxs">
+        <div class="progress-bar progress-bar-dark" role="progressbar" data-width="100">
+        </div>
+      </div> 
+      <h3 class="heading-xs">Специальность <span class="pull-right text-uppercase">{{ teacher.specialty }}</span></h3>
+      <div class="progress progress-u progress-xxs">
+        <div class="progress-bar progress-bar-dark" role="progressbar" data-width="100">
+        </div>
+      </div>           
+
+    </div>
+    <!-- End Progress Bar -->
+  </div><!--/end row-->
+</div>
+<!--=== End Container Part ===-->

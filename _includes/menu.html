@@ -1,0 +1,9 @@
+<div class="collapse navbar-collapse navbar-responsive-collapse">
+  <ul class="nav navbar-nav ">
+      {% for link in site.data.links %}
+        <li {% if page.menu == '{{ site.url }}/{{ link.alt }}' %} class='active' {% endif %} >
+          <a href="{{ site.url }}/{{ link.url }}.html">{{ link.alt }}</a>
+        </li>    
+      {% endfor %}
+   </ul>
+</div>

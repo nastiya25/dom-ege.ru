@@ -1,0 +1,40 @@
+{
+  "lp": {
+    "name": "ЦЛЖ Лидер-Престиж",
+    "fio": "Поплавская Елена Владимировна",
+    "city": "Москва",
+    "email": "1@spitz.su",
+    "web": "http://spitz.su/"
+  },
+  "kampus": {
+    "name": "Кампус",
+    "fio": "Иванова Елена Владимировна",
+    "city": "Питер",
+    "email": "2@spitz.su",
+    "web": "http://spitz1.su/"
+  },
+  "shlupka": {
+    "name": "Шлюпка",
+    "fio": "Иванова Ирина Владимировна",
+    "city": "Екатеринбург",
+    "email": "3@spitz.su",
+    "web": "4@spitz.su"
+  },
+  "ivanova": {
+    "name": "ivanova",
+    "fio": "Иванова Ирина Александровна",
+    "city": "Омск",
+    "email": "4@spitz.su"
+  },
+  "sidorova": {
+    "name": "sidorova",
+    "fio": "Сидорова Ирина Владимировна",
+    "city": "Уфа"
+  },
+  "new-members": {
+    "fio": "Петрова",
+    "city": "Москва",
+    "email": "4@spitz.su",
+    "web": "4@spitz.su"
+  }
+}

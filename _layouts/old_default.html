@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+      {% include head.html %}  
+  </head>
+
+    
+  <!-- header start -->
+  <header class="header text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="logo">
+            <a href="index.html"> Дом-ЕГЭ</a>
+          </div>
+          <div class="site-slogan">
+            Дом-ЕГЭ
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+    
+    
+		<!-- page wrapper start (Add "boxed" class to page-wrapper in order to enable boxed layout mode) -->
+		<div class="page-wrapper boxed">
+		
+			<!-- scrollToTop start -->
+			<div class="scrollToTop"><i class="fa fa-angle-up"></i></div>
+  
+			<!-- header top start -->
+      <br><br>
+			<!-- header start -->
+
+			<!-- header end -->
+				<!-- main content wrapper start -->
+				<div class="main-content-wrapper">
+					<div class="container">
+						<div class="row">
+
+							<!-- sidebar start -->
+              
+                 {% include menu.html %}
+
+							<!-- sidebar end -->
+
+							<!-- main content start -->
+							<section class="main-content col-md-8 col-md-offset-1">           
+              <h1>{{ page.title }}</h1>
+                
+               {{ content }}
+               <br><br>
+							</section>
+							<!-- main content end -->
+
+						</div>
+					</div>
+				</div>
+				<!-- main content wrapper end -->
+
+			<!-- main end -->
+      {% include footer.html %} 
+
+		</div>
+    {% include js.html %}         
+
+	</body>
+</html>

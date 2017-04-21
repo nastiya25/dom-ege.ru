@@ -1,0 +1,14 @@
+---
+layout: default-index
+menu: teachers
+---
+{% assign teacher = site.data.teachers[page.menu] %}
+
+<a href="..">&larr; back</a>
+<hr>
+
+name: <b>{{teacher.url}}</b><br>
+menu: <b>{{page.menu}}</b><br>
+alt: <b>{{teacher.alt}}</b><br>
+
+

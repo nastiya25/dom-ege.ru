@@ -1,0 +1,279 @@
+/*
+Theme Name: iVega - Clean & Modern HTML5 template
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.0.0 
+Created: July 2014
+License URI: http://wrapbootstrap.com
+File Description: Pink Skin
+*/
+
+/* 1 Typography
+----------------------------------------------------------------------------- */
+a {
+	color: #ff8b9f;
+}
+a:hover {
+	color: #ff6680;
+}
+mark, .mark {
+	background-color: #ff8b9f;
+}
+/* Footer/Subfooter links
+----------------------------------*/
+.footer a, .subfooter a {
+	color: #ff8b9f;
+}
+.footer a:hover, .subfooter a:hover {
+	color: #ff6680;
+}
+/* Lists
+----------------------------------*/
+.list-triangle li:after {
+	color: #ff8b9f;
+}
+/* Tables 
+----------------------------------*/
+.table > thead > tr > th {
+	border-bottom: 1px solid #ff8b9f;
+	background-color: #ff8b9f;
+}
+.table-bordered {
+	border-color: #ff8b9f;
+}
+/* 2 Layout
+----------------------------------------------------------------------------- */
+.page-wrapper {
+	border-top: 1px solid #ff8b9f;
+}
+.bg-color-default {
+	background-color: #ff8b9f;
+}
+/* Miscellaneous
+----------------------------------*/
+.triangle i {
+	color: #ff8b9f;
+}
+.separator:after {
+	background-color: #ff8b9f;
+}
+/* 3 Pages
+----------------------------------------------------------------------------- */
+/* Blog 
+----------------------------------*/
+.post-date {
+	background-color: #ff8b9f;
+}
+/* 4 Template Elements
+----------------------------------------------------------------------------- */
+/* Breadcrumb
+----------------------------------*/
+.breadcrumb > .active {
+	color: #ff8b9f;
+}
+/* Pager
+----------------------------------*/
+ul.pagination li > a:hover {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+ul.pagination li.active a, 
+.pagination > .active > a:hover, 
+.pagination > .active > a:focus {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+/* Button with colored bg (the color of default buttons is the color of current color scheme)
+----------------------------------*/
+/* Default button
+----------------------------------*/
+.btn-default,
+#preheader-contact-form .btn-default.disabled,
+#contact-form .btn-default.disabled,
+#footer-form .btn-default.disabled {
+	background-color: #ff8b9f;
+	border-color: #ff8b9f;
+}
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active, 
+.btn-default.active, 
+.open .dropdown-toggle.btn-default {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+.bg-color-default .btn-white:hover, 
+.bg-color-default .btn-white:focus, 
+.bg-color-default .btn-white:active, 
+.bg-color-default .btn-white.active, 
+.bg-color-default .open .bg-color-default 
+.dropdown-toggle.btn-white {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+/* Button with transparent bg
+----------------------------------*/
+.btn-white:hover, 
+.btn-white:focus, 
+.btn-white:active, 
+.btn-white.active, 
+.open .dropdown-toggle.btn-white {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+/* Tabs
+----------------------------------*/
+.nav-tabs {
+	border-bottom: 1px solid #ff8b9f;
+}
+.nav-tabs > li > a:hover {
+	border-color: #ff8b9f;
+	background-color: #ff8b9f;
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+	background-color: #ff8b9f;
+	border: 1px solid #ff8b9f;
+	border-bottom: 1px solid #ff8b9f;
+}
+/* Nav pills
+----------------------------------*/
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus, 
+.nav-pills > li > a:hover, 
+.nav-pills > li > a:focus {
+	background-color: #ff8b9f;
+}
+.nav-pills.nav-stacked > li > a:after {
+	color: #ff8b9f;
+}
+.nav-pills > li.active > a:after, 
+.nav-pills > li.active > a:hover:after, 
+.nav-pills > li.active > a:focus:after, 
+.nav-pills > li > a:hover:after, 
+.nav-pills > li > a:focus:after {
+	color: #fff;
+}
+/* Collapse
+----------------------------------*/
+.panel-heading a {
+	background-color: #ff8b9f;
+}
+.panel-heading a:hover {
+	background-color: #ff8b9f;
+}
+/* Progress bars
+----------------------------------*/
+.progress-bar-default {
+	background-color: #ff8b9f;
+}
+/* Images overlay
+----------------------------------*/
+.mask .triangle {
+	border-color: transparent #ff8b9f transparent transparent;
+}
+/* 5 Navigations
+----------------------------------------------------------------------------- */
+/* Main navigation
+----------------------------------*/
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: #ff8b9f;
+}
+.dropdown-menu > li > a {
+	background-color: #ff8b9f;
+}
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus, 
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus {
+	background-color: #ff6680;
+}
+.navbar-default .navbar-symbols > .open > a, 
+.navbar-default .navbar-symbols > .open > a:hover, 
+.navbar-default .navbar-symbols > li > a:hover, 
+.navbar-default .navbar-symbols > .active > a:hover, 
+.navbar-default .navbar-symbols > .active > a:focus, 
+.navbar-default .navbar-symbols > .open > a:focus {
+	background-color: transparent;
+	color: #ff8b9f;
+}
+/* 6 Blocks/Widgets
+----------------------------------------------------------------------------- */
+/* Social icons block
+----------------------------------*/
+.social-links li a:hover {
+	color: #ff8b9f;
+	border-color: #ff8b9f;
+}
+/*info*/
+.header-top .info li i {
+	color: #ff8b9f;
+}
+/* Tags cloud block
+----------------------------------*/
+.tag a:hover {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+/* Icon-boxes
+----------------------------------*/
+.icon-box i {
+	color: #ff8b9f;
+	border: 5px solid #ff8b9f;
+}
+.icon-box:hover i {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+.icon-box-2 i {
+	color: #ff8b9f;
+	border: 5px solid #ff8b9f;
+}
+.icon-box-2:hover i {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+.icon-box-2:hover h3 {
+	color: #ff6680;
+}
+.icon-box-3 i {
+	color: #ff8b9f;
+	border: 1px solid #ff8b9f;
+}
+.icon-box-3:hover i {
+	background-color: #ff6680;
+	border-color: #ff6680;
+}
+.icon-box-3:hover h3 {
+	color: #ff6680;
+}
+/* Stats
+----------------------------------*/
+.stat-box {
+	border-top: 1px solid #ff8b9f;
+	border-right: 1px solid #ff8b9f;
+}
+/* Pricing tables
+----------------------------------*/
+.plan .header {
+	background: #ff8b9f;
+	-webkit-box-shadow: 0px 0px 60px #ff6680 inset;
+	-moz-box-shadow: 0px 0px 60px #ff6680 inset;
+	box-shadow: 0px 0px 60px #ff6680 inset;
+}
+.plan .popover-title {
+	background-color: #ff8b9f;
+}
+.flex-direction-nav a { 
+	color: #fff
+}

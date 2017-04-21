@@ -1,0 +1,36 @@
+---
+layout: default-index
+menu: index
+---
+<div class="container content">
+    <div class="title-box-v2">
+      <h2><span class="color-green">П</span>реподаватели</h2>
+    </div>
+
+  <div class="row team-v4 teachers-table">
+  {% for t in site.data.teachers %}
+    {% assign code = t[0] %}
+    {% assign teacher = t[1] %}
+    {% assign photo = t[2] %}
+    {% assign subject = t[3] %}
+    {% assign standing = t[4] %}
+    {% assign exp = t[5] %}
+    {% assign edu = t[6] %}
+    {% assign spec = t[7] %}
+    {% assign cat = t[8] %}
+    {% assign description = t[9] %}
+    
+    <div class="col-md-4 col-sm-6 md-margin-bottom-60 teachers-cell">
+      <img class="img-responsive" src="{{ site.url }}/assets/img/teachers/{{ teacher.photo }}" alt="">
+      <span>{{ teacher.name }}</span>
+      <small>- {{ teacher.subject }} -</small>
+      <p>Педагогический стаж: {{ teacher.standing }}</p>
+      <p>Опыт подготовки к ЕГЭ: {{ teacher.experience }}</p>
+      <p><a href="{{ site.url }}/pages/{{ t[0] }}.html" class="btn-u">Подробнее</a></p>
+      <br>
+    </div>    
+    
+  {% endfor %}    
+    
+  </div>
+</div>

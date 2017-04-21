@@ -1,0 +1,20 @@
+- url: index
+  alt: Главная
+
+- url: about-us
+  alt: Почему мы?  
+  
+- url: teachers
+  alt: Преподаватели
+  
+- url: courses-oge
+  alt: Курсы ОГЭ
+  
+- url: courses-ege
+  alt: Курсы ЕГЭ  
+  
+- url: price
+  alt: Стоимость
+  
+- url: contacts
+  alt: Контакты

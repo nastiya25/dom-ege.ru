@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="ru" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="ru" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="ru"> <!--<![endif]-->
+<head>
+  {% include head.html %}  
+</head>
+
+<body>
+	<div class="wrapper">
+    <div class="header"> 
+			<div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="logo" href="index.html">
+              <img src="{{ site.url }}/assets/img/logo1-default.png" alt="Logo">
+            </a>   
+          </div>
+           <div class="col-md-8">
+              <div class="topbar">
+                <ul class="loginbar pull-right">
+                  <li><i class="fa fa-phone"></i> +7(495)676-648</li>
+                  <li class="topbar-devider"></li>
+                  <li><i class="fa fa-home"></i> м. Третьяковская</li>
+                  <li class="topbar-devider"></li>
+                  <li> м. Китай-Город</li>
+                  <li class="topbar-devider"></li>
+                  <li><i class="fa fa-envelope"></i> info@ege-dom.ru</li>
+                </ul>
+              </div>     
+          </div> 
+        </div>
+			</div>
+		</div>
+    <div class="header margin-bottom-40"> 
+			<div class="container">      
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Меню</span>
+					<span class="fa fa-bars"></span>
+				</button>
+			</div>
+        {% include menu.html %}
+		</div>    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          
+             {{ content }}
+
+        </div>
+      </div>
+    </div>   
+
+
+
+  <div class="footer-v1">
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              2016-2017 &copy; Все права защищены.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/smoothScroll.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/parallax-slider/js/modernizr.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="{{ site.url }}/assets/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="{{ site.url }}/assets/js/app.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/owl-carousel.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/parallax-slider.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			OwlCarousel.initOwlCarousel();
+			StyleSwitcher.initStyleSwitcher();
+			ParallaxSlider.initParallaxSlider();
+		});
+	</script>
+		<!--[if lt IE 9]>
+			<script src="{{ site.url }}/assets/plugins/respond.js"></script>
+			<script src="{{ site.url }}/assets/plugins/html5shiv.js"></script>
+			<script src="{{ site.url }}/assets/plugins/placeholder-IE-fixes.js"></script>
+		<![endif]-->
+
+	</body>
+	</html>
