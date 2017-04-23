@@ -72,6 +72,11 @@ a:hover {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
 }
+
+.freebirdFormviewerViewFormBanner, .freebirdHeaderMast, .freebirdFormviewerViewFormContentWrapper{
+  	background: transparent;
+
+}
 /*Boxed Layout
 ------------------------------------*/
 .wrapper, .header {
