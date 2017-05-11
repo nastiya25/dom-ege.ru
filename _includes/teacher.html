@@ -37,9 +37,45 @@
         <div class="progress-bar progress-bar-dark" role="progressbar" data-width="100">
         </div>
       </div>           
-
+      <h3 class="heading-xs">Ученики поступили в <span class="pull-right text-uppercase">{{ teacher.insts }}</span></h3>
+      <div class="progress progress-u progress-xxs">
+        <div class="progress-bar progress-bar-dark" role="progressbar" data-width="100">
+        </div>
+      </div>  
     </div>
     <!-- End Progress Bar -->
   </div><!--/end row-->
 </div>
-<br><br><br><br><br>
+<div class="heading heading-v1 margin-bottom-30">
+  <h2><span class="color-green">Отзывы</span> учеников</h2>
+</div>
+<div class="row margin-bottom-40">
+  <div class="col-md-12 ">
+    <div id="testimonials-8" class="carousel slide testimonials testimonials-v2">
+      <div class="carousel-inner">
+      {% for review in site.data.reviews %}
+      {% if review.teacher == page.menu %}       
+
+        <div class="item {{review.active-menu }}">
+          <p>{{ review.review }}</p>
+          <div class="testimonial-info">
+            <span class="testimonial-author">
+              {{ review.author-name }}
+              <em>{{ review.author-class }}</em>
+            </span>
+          </div>
+        </div>
+      {% endif %}      
+      {% endfor %}							
+      </div>
+      <div class="carousel-arrow">
+        <a class="left carousel-control" href="#testimonials-8" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="right carousel-control" href="#testimonials-8" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
