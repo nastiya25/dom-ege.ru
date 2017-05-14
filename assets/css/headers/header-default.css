@@ -210,8 +210,9 @@ body.header-fixed-space-default {
 
 .header .logo img {
 	z-index: 1;
-	margin: 20px 0;
+	margin: 0 0 15px 20px;
 	position: relative;
+  width: 200px;
 }
 
 /*Big Logo Style*/
