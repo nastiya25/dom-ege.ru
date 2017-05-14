@@ -85,7 +85,15 @@ h2.sale{
   font-size: 30px;
   font-weight: bold;
 }
-
+.pricing-light .pricing-footer h5 {
+    color: #888;
+    padding: 5px;
+    font-size: 20px;
+    text-shadow: none;
+    margin: -2px 0 0px;
+    font-weight: bold !important;
+    margin: 10px;
+}
 /*Boxed Layout
 ------------------------------------*/
 .wrapper, .header {
