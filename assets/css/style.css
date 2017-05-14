@@ -81,6 +81,10 @@ a:hover {
 .list-unstyled {
   text-align: justify;
 }
+h2.sale{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 /*Boxed Layout
 ------------------------------------*/
