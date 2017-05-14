@@ -77,6 +77,11 @@ a:hover {
   	background: transparent;
 
 }
+
+.list-unstyled {
+  text-align: justify;
+}
+
 /*Boxed Layout
 ------------------------------------*/
 .wrapper, .header {
