@@ -1,0 +1,68 @@
+{
+   "math": {
+      "name": "Математика",
+      "url": "math",
+      "subject": "math",
+      "rodp": "математики"
+   },
+   "russian": {
+      "name": "Русский язык",
+      "url": "russian",
+      "subject": "russian",
+      "rodp": "русского языка"
+   },
+   "literature": {
+      "name": "Литература",
+      "url": "literature",
+      "subject": "russian",
+      "rodp": "литературы"
+   },
+   "geography": {
+      "name": "География",
+      "url": "geography",
+      "subject": "geography",
+      "rodp": "географии"
+   },
+   "biology": {
+      "name": "Биология",
+      "url": "biology",
+      "subject": "biology",
+      "rodp": "биологии"
+   },
+   "chemistry": {
+      "name": "Химия",
+      "url": "chemistry",
+      "subject": "chemistry",
+      "rodp": "химии"
+   },
+   "physics": {
+      "name": "Физика",
+      "url": "physics",
+      "subject": "physics",
+      "rodp": "физики"
+   },
+   "informatics": {
+      "name": "Информатика",
+      "url": "informatics",
+      "subject": "informatics",
+      "rodp": "информатики"
+   },
+   "history": {
+      "name": "История",
+      "url": "history",
+      "subject": "history",
+      "rodp": "истории"
+   },
+   "social": {
+      "name": "Обществознание",
+      "url": "social",
+      "subject": "history",
+      "rodp": "обществознания"
+   },
+   "english": {
+      "name": "Английский язык",
+      "url": "english",
+      "subject": "english",
+      "rodp": "английского языка"
+   }
+}

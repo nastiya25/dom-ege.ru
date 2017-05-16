@@ -3,7 +3,20 @@ layout: default-index
 menu: index
 title: Курсы ОГЭ
 ---
+
   <div class="container content">
+    <div class="row">
+      <div class="col-md-12 text-center text-justify  margin-bottom-20 center-block">
+          <table width="100%" border=0>
+            <tr>
+            {% for subject in site.data.subjects %}
+              <td><a href="{{ site.url }}/subjects11/{{ subject.url }}" class="btn-u" type="button">{{ subject.name }}</a></td>
+            {% endfor %}              
+            </tr>
+          </table>       
+        </div>
+      </div>
+    </div>
     <div class="title-box-v2">
       <h2>Курсы <span class="color-green">ЕГЭ</span></h2>
     </div>
