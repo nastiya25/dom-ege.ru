@@ -2,10 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-      {% include head.html %}  
+      {% include head.html %}
   </head>
-
-    
+  {% include bodyopen.html %}
   <!-- header start -->
   <header class="header text-center">
     <div class="container">
@@ -22,14 +21,14 @@
     </div>
   </header>
   <!-- header end -->
-    
-    
+
+
 		<!-- page wrapper start (Add "boxed" class to page-wrapper in order to enable boxed layout mode) -->
 		<div class="page-wrapper boxed">
-		
+
 			<!-- scrollToTop start -->
 			<div class="scrollToTop"><i class="fa fa-angle-up"></i></div>
-  
+
 			<!-- header top start -->
       <br><br>
 			<!-- header start -->
@@ -41,15 +40,15 @@
 						<div class="row">
 
 							<!-- sidebar start -->
-              
+
                  {% include menu.html %}
 
 							<!-- sidebar end -->
 
 							<!-- main content start -->
-							<section class="main-content col-md-8 col-md-offset-1">           
+							<section class="main-content col-md-8 col-md-offset-1">
               <h1>{{ page.title }}</h1>
-                
+
                {{ content }}
                <br><br>
 							</section>
@@ -61,10 +60,10 @@
 				<!-- main content wrapper end -->
 
 			<!-- main end -->
-      {% include footer.html %} 
+      {% include footer.html %}
 
 		</div>
-    {% include js.html %}         
+    {% include js.html %}
 
 	</body>
 </html>

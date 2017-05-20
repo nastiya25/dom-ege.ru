@@ -3,18 +3,19 @@
 <!--[if IE 9]> <html lang="ru" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="ru"> <!--<![endif]-->
 <head>
-  {% include head.html %}  
+  {% include head.html %}
 </head>
 
 <body>
+  {% include bodyopen.html %}
 	<div class="wrapper">
-    <div class="header"> 
+    <div class="header">
 			<div class="container">
         <div class="row">
           <div class="col-md-4">
             <a class="logo" href="index.html">
               <img src="{{ site.url }}/assets/img/logo1-default.png" alt="Logo">
-            </a>   
+            </a>
           </div>
            <div class="col-md-8">
               <div class="topbar">
@@ -27,30 +28,30 @@
                   <li class="topbar-devider"></li>
                   <li><i class="fa fa-envelope"></i> info@ege-dom.ru</li>
                 </ul>
-              </div>     
-          </div> 
+              </div>
+          </div>
         </div>
 			</div>
 		</div>
-    <div class="header margin-bottom-40"> 
-			<div class="container">      
+    <div class="header margin-bottom-40">
+			<div class="container">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 					<span class="sr-only">Меню</span>
 					<span class="fa fa-bars"></span>
 				</button>
 			</div>
         {% include menu.html %}
-		</div>    
-    
+		</div>
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          
+
              {{ content }}
 
         </div>
       </div>
-    </div>   
+    </div>
 
 
 
@@ -91,7 +92,7 @@
     window.open('https://github.com/nastiya25/dom-ege.ru/edit/gh-pages/{{page.path}}');
   });
   </script>
-    
+
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
