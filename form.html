@@ -1,8 +1,58 @@
 ---
 layout: default-index
 menu: index
-title: фОРМА
+title: Форма
 ---
+<form action="http://spitz.su/feedback/send_scan.php" method="post" id="sky-form3" class="sky-form">
+  <header>Contacts form</header>
+
+  <fieldset>
+    <div class="row">
+      <section class="col col-6">
+        <label class="label">Name</label>
+        <label class="input">
+          <i class="icon-append fa fa-user"></i>
+          <input type="text" name="name" id="name">
+        </label>
+      </section>
+      <section class="col col-6">
+        <label class="label">E-mail</label>
+        <label class="input">
+          <i class="icon-append fa fa-envelope-o"></i>
+          <input type="email" name="email" id="email2">
+        </label>
+      </section>
+    </div>
+
+    <section>
+      <label class="label">Subject</label>
+      <label class="input">
+        <i class="icon-append fa fa-tag"></i>
+        <input type="text" name="subject" id="subject">
+      </label>
+    </section>
+
+    <section>
+      <label class="label">Message</label>
+      <label class="textarea">
+        <i class="icon-append fa fa-comment"></i>
+        <textarea rows="4" name="message" id="message"></textarea>
+      </label>
+    </section>
+  </fieldset>
+
+  <footer>
+    <button type="submit" class="button">Отправить сообщение</button>
+  </footer>
+
+  <div class="message">
+    <i class="rounded-x fa fa-check"></i>
+    <p>Your message was successfully sent!</p>
+  </div>
+</form>
+
+
+<!--
 <div id="wufoo-rkhooti0kveabz">
 Fill out my <a href="https://ritavto.wufoo.com/forms/rkhooti0kveabz">online form</a>.
 </div>
@@ -24,6 +74,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 })(document, 'script');</script>
 
 
-<!--
+
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZlEMYqrUvWNQsVEnpsWJGkuFAc2kCDo-RuExpWqxnx9JzVg/viewform?embedded=true" width="100%" height="1900" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
 -->
