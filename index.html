@@ -59,7 +59,16 @@ menu: index
     </div>
   </div>
 </div>
-  <hr class="devider devider-dashed">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12c48b42e681f688d2607401a6be76c7af2b22b91295335fc253b085f614bb10&amp;width=100%25&amp;height=584&amp;lang=ru_RU&amp;scroll=true"></script>
-
-  <hr class="devider devider-dashed">
+<div class="container content">
+  <div class="row">
+    <div class="col-md-12 text-center text-justify  margin-bottom-20 center-block">
+        <table width="100%" border=0>
+          <tr>
+          {% for subject in site.data.subjects %}
+            <td><a href="{{ site.url }}/subjects11/{{ subject.url }}" class="btn-u" type="button">{{ subject.name }}</a></td>
+          {% endfor %}              
+          </tr>
+        </table>    
+      </div>
+    </div>
+</div>
