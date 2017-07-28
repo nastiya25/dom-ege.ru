@@ -11,7 +11,7 @@
   })(window,document,'script','dataLayer','GTM-PN3GHD9');</script>
   <!-- End Google Tag Manager -->
 
-  <title>Дом ЕГЭ. Курсы Подготовки к ЕГЭ и ОГЭ</title>
+  <title>Дом ЕГЭ. Курсы Подготовки к ЕГЭ и ОГЭ. по химии </title>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -143,94 +143,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="row">
         <div class="col-sm-12">
 
-          <div class="container content">
-  <div class="title-box-v2">
-    <h2><span class="color-green big-text">ЕГЭ</span> на <span class="color-green big-text">100</span> баллов</h2>
-  </div>
-</div>
-<div class="purchase margin-bottom-40" style="margin-top:-20px;">
-  <div class="container text-center">
-    <br>
-    <!-- Service Box -->
-    <div class="row text-center margin-bottom-60">
-      <div class="col-md-3 md-margin-bottom-50">
-        <i class="icon-custom icon-lg rounded-x icon-bg-u icon-line fa fa-graduation-cap"></i>        
-        <h1 class="title-v3-md margin-bottom-10">Эксперты ЕГЭ</h1>
-        <p>Квалифицированные опытные <a href="/teachers.html">преподаватели</a></p>
-      </div>
-      <div class="col-md-3 flat-service md-margin-bottom-50">
-        <i class="icon-custom icon-lg rounded-x icon-bg-u icon-line fa  fa-thumbs-up"></i>        
-        <h2 class="title-v3-md margin-bottom-10">Индивидуальный подход</h2>
-        <p>Группы <a href="/about-us.html">от 4 до 8 человек</a></p>
-      </div>
-      <div class="col-md-3 flat-service">
-        <i class="icon-custom icon-lg rounded-x icon-bg-u icon-line fa fa-map-marker "></i>        
-        <h2 class="title-v3-md margin-bottom-10">Удобное расположение</h2>
-        <p>Рядом <a href="/contacts.html">с метро</a></p>
-      </div>
-      <div class="col-md-3 flat-service">
-        <i class="icon-custom icon-lg rounded-x icon-bg-u icon-line fa fa-file-text-o "></i>        
-        <h2 class="title-v3-md margin-bottom-10">Пробное тестирование</h2>
-        <p>На <a href="/about-us.html">официальных</a> бланках</p>
-      </div>          
-    </div>
-  </div>
-</div>
-<div class="container content">  
-  <div class="row">
-    <div class="col-md-6">
-      <p class="text-justify"><span class="color-green">Дом ЕГЭ</span> – один из лучших центров подготовки к единому государственному экзамену в Москве.</p>
-      <p class="text-justify">Система обучения, разработанная нашими педагогами, помогает учащимся успешно сдать экзамены и поступить в <span class="color-green">ведущие вузы страны</span>.  Занятия проводят преподаватели с многолетним опытом подготовки к егэ и огэ, эксперты и кандидаты наук.</p>
-      <p class="text-justify"><span class="color-green">Индивидуальный подход</span> к каждому ученику дает возможность эффективно подготовиться к самому важному экзамену и сдать его на долгожданные 100 баллов.</p>
-      
-    </div>
-      <div class="col-md-6">
-          <img class="img-responsive" src="/assets/img/photo/room6.jpg" alt="">
-      </div>    
-  </div>
-</div>
-<div class="container text-center md-margin-bottom-40">
-  <div class="row md-margin-bottom-40">
-    <div class="col-sm-12">
-            <h3><em>Свяжитесь с нами по почте <strong class="color-darker">mydomege@gmail.com</strong> или позвоните по <strong class="color-darker">т. +7 (495) 798-36-96 </strong></em></h3>	<br>				            
-            
-           <p>               <a href="/form.html" class="btn-u btn-brd btn-u btn-u-lg btn-logo"><i class="icon-pencil"></i> Записаться на курсы</a>
-</p>
-    </div>
-  </div>
-</div>
+          <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+
+<script type="text/javascript">
+	setTimeout(function(){$('.hide-block').fadeOut('fast')},60000*45);  //30000 = 30 секунд
+	setTimeout(function(){$('.box-show').css("display", "block")},60000*45);  //30000 = 30 секунд
+</script>
+<script type="text/javascript">
+function timery(){
+var obj=document.getElementById('timer');
+obj.innerHTML--;
+if(obj.innerHTML==0){setTimeout(function(){},60000*45);}
+else{setTimeout(timery,60000*45);}
+}
+setTimeout(timery,60000*45);
+</script>
 <div class="container content">
-  <div class="row">
-    <div class="col-md-12 text-center text-justify  margin-bottom-20 center-block">
-        <table width="100%" border=0>
-          <tr>
-          
-            <td><a href="/subjects11/math" class="btn-u" type="button">Математика</a></td>
-          
-            <td><a href="/subjects11/russian" class="btn-u" type="button">Русский язык</a></td>
-          
-            <td><a href="/subjects11/literature" class="btn-u" type="button">Литература</a></td>
-          
-            <td><a href="/subjects11/geography" class="btn-u" type="button">География</a></td>
-          
-            <td><a href="/subjects11/biology" class="btn-u" type="button">Биология</a></td>
-          
-            <td><a href="/subjects11/chemistry" class="btn-u" type="button">Химия</a></td>
-          
-            <td><a href="/subjects11/physics" class="btn-u" type="button">Физика</a></td>
-          
-            <td><a href="/subjects11/informatics" class="btn-u" type="button">Информатика</a></td>
-          
-            <td><a href="/subjects11/history" class="btn-u" type="button">История</a></td>
-          
-            <td><a href="/subjects11/social" class="btn-u" type="button">Обществознание</a></td>
-          
-            <td><a href="/subjects11/english" class="btn-u" type="button">Английский язык</a></td>
-                        
-          </tr>
-        </table>    
-      </div>
+  <div class="row margin-bottom-120">
+      <div class="title-box-v2">
+        <h2><span class="color-green">Тестирование</span> по химии</h2>
+      </div>    
+    <div class="hide-block">
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="alert alert-danger fade in text-center box">
+        Этот тест исчезнет через <strong><div id="timer">45</div></strong> минут.<br>
+        <strong>Важно</strong> отправить форму до окончания времени. 
+      </div>  
     </div>
+    <div class="col-md-12">
+       <iframe src="https://docs.google.com/forms/d/1f9kdulIOkDrrx6qflXtO7xHWfsx7icgoXoO2jO7Q36M/edit/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe> 
+    </div>
+    </div>
+    <div class="col-md-6 col-md-offset-3 margin-bottom-60 box-show">
+
+      <div class="alert alert-success fade in text-center ">
+        Спасибо за уделенное время!<br>
+        Мы свяжемся с Вами <strong>после обработки</strong> результатов тестирования.
+      </div>  
+    </div>
+  </div>
 </div>
 
           <br>
@@ -395,7 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="/assets/js/mousetrap.min.js?a4098"></script>
   <script>
   Mousetrap.bind('ctrl+shift+k', function(e) {
-    window.open('https://github.com/nastiya25/dom-ege.ru/edit/gh-pages/index.html');
+    window.open('https://github.com/nastiya25/dom-ege.ru/edit/gh-pages/tests/chemistry 9');
   });
   </script>
 	<script type="text/javascript">
