@@ -207,3 +207,17 @@ select::-ms-expand {
   background: #fff;
   
 }
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 0px;
+    z-index: 2;
+	}
+.box-show {
+    display:none;
+	}  
+#timer {
+	font: 60px Tahoma;
+	}

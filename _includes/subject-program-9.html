@@ -38,6 +38,19 @@
 {% endfor %}    
   </div>
 </div>  
+  
+  
+ {% if $pagesubject.programm9 %}
+  
+  <div class="title-box-v2">
+    <h2><span class="color-green">П</span>рограмма подготовки к ОГЭ для 9 класса</h2>
+  </div>
+
+  <div class="row">
+      {% include programms/{{ pagesubject.url }}-9.html %}
+  </div> 
+    {% endif %}
+ 
 </div>
    {% endif %}
 {% endfor %}    
