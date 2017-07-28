@@ -40,7 +40,7 @@
 </div>  
   
   
- {% if $pagesubject.programm11 %}
+ {% if $pagesubject.programm11 and $pagesubject.programm10 %}
   
   <div class="title-box-v2">
     <h2><span class="color-green">П</span>рограмма</h2>
@@ -88,7 +88,16 @@
 						</div>
 
 					</div>    
-   {% endif %}
+ {% else %}
+  
+  <div class="title-box-v2">
+    <h2><span class="color-green">П</span>рограмма подготовки к ЕГЭ для 11 класса</h2>
+  </div>
+
+  <div class="row">
+      {% include programms/{{ pagesubject.url }}-11.html %}
+  </div> 
+    {% endif %}
 
 </div>    
 </div>
