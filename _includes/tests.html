@@ -1,5 +1,8 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
 <script src='/public/tests.js'></script>
+<script>
+initTest({{page.testtime}});
+</script>
 <div class="container content">
   <div class="row margin-bottom-120">
       <div class="title-box-v2">
@@ -9,7 +12,7 @@
     <div class="col-md-6 col-md-offset-3">
 
       <div class="alert alert-danger fade in text-center box">
-        Этот тест исчезнет через <strong><div id="timer">{{ page.testtime}}</div></strong> минут.<br>
+        На этот тест осталось <strong><div id="timer"></div></strong><br>
         <strong>Важно</strong> отправить форму до окончания времени.
       </div>
     </div>
