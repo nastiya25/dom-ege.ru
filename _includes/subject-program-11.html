@@ -40,14 +40,17 @@
 </div>  
   
   
- {% if $pagesubject.programm11 and $pagesubject.programm10 %}
+   {% if $pagesubject.programm11 or $pagesubject.programm10 %}
   
   <div class="title-box-v2">
     <h2><span class="color-green">П</span>рограмма</h2>
   </div>
+   {% endif %}
 
-  <div class="row">    
+<div class="row">    
 <div class="panel-group acc-v1" id="accordion-1">
+   {% if $pagesubject.programm11 %}
+
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h2 class="panel-title">
@@ -66,6 +69,9 @@
 								</div>
 							</div>
 						</div>
+   {% endif %}
+
+   {% if $pagesubject.programm10 %}
 
 						<div class="panel panel-default">
 							<div class="panel-heading">
@@ -87,9 +93,11 @@
 							</div>
 						</div>
 
-					</div>    
- {% else %}
-  
+					</div> 
+        {% endif %}
+
+   {% if !$pagesubject.programm10  and !$pagesubject.programm11 %}
+
   <div class="title-box-v2">
     <h2><span class="color-green">П</span>рограмма подготовки к ЕГЭ для 11 класса</h2>
   </div>
