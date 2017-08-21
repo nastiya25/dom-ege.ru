@@ -38,9 +38,11 @@ menu: index
 </div>
 <div class="container content">
   <div class="row">
-<div class="heading heading-v1 margin-bottom-30">
+     <div class="col-md-12">
+      <div class="heading heading-v1 margin-bottom-30">
         <h2 class="sale"><span class="color-green">Вернем 100%</span> стоимости обучения, если ученик не сдаст ОГЭ или ЕГЭ</h2>
       </div> 
+    </div>
   </div>
 </div>
 <div class="container content">  
@@ -69,16 +71,15 @@ menu: index
     </div>
   </div>
 </div>
+
 <div class="container content">
   <div class="row">
-    <div class="col-md-12 text-center text-justify  margin-bottom-20 center-block">
-        <table width="100%" border=0>
-          <tr>
-          {% for subject in site.data.subjects %}
-            <td><a href="{{ site.url }}/subjects11/{{ subject.url }}" class="btn-u" type="button">{{ subject.name }}</a></td>
-          {% endfor %}              
-          </tr>
-        </table>    
+    <div class="col-md-12 margin-bottom-20">
+          <div class="owl-clients-v1">
+            {% for subject in site.data.subjects %}
+                <a href="{{ site.url }}/subjects11/{{ subject.url }}" class="btn-u" style="margin-left:10px" type="button">{{ subject.name }}</a>
+            {% endfor %}
+          </div>        
       </div>
     </div>
 </div>
