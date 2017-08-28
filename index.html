@@ -75,11 +75,9 @@ menu: index
 <div class="container content">
   <div class="row">
     <div class="col-md-12 margin-bottom-20">
-          <div class="owl-clients-v1">
-            {% for subject in site.data.subjects %}
-                <a href="{{ site.url }}/subjects11/{{ subject.url }}" class="btn-u" style="margin-left:10px" type="button">{{ subject.name }}</a>
-            {% endfor %}
-          </div>        
+      {% for subject in site.data.subjects %}
+           <a href="{{ site.url }}/subjects11/{{ subject.url }}" class="btn-u btn-u-xs" style="margin-left:5px" type="button">{{ subject.name }}</a>
+      {% endfor %}
       </div>
     </div>
 </div>

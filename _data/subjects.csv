@@ -1,12 +1,12 @@
-menu,name,url,subject,rodp,programm11,programm10,programm9
-math,Математика,math,math,математики,1,1,
-russian,Русский язык,russian,russian,русского языка,1,1,
-literature,Литература,literature,russian,литературы,1,,
-geography,География,geography,geography,географии,,,
-biology,Биология,biology,biology,биологии,1,1,
-chemistry,Химия,chemistry,chemistry,химии,1,1,
-physics,Физика,physics,physics,физики,1,1,
-informatics,Информатика,informatics,informatics,информатики,,,
-history,История,history,history,истории,1,1,
-social,Обществознание,social,history,обществознания,1,1,
-english,Английский язык,english,english,английского языка,,,
+menu,name,url,subject,rodp,datp,programm11,programm10,programm9
+math,Математика,math,math,математики,математике,1,1,1
+russian,Русский язык,russian,russian,русского языка,русскому языку,1,1,1
+literature,Литература,literature,russian,литературы,литературе,1,,
+geography,География,geography,geography,географии,географии,,,
+biology,Биология,biology,biology,биологии,биологии,1,1,1
+chemistry,Химия,chemistry,chemistry,химии,химии,1,1,1
+physics,Физика,physics,physics,физики,физике,1,1,1
+informatics,Информатика,informatics,informatics,информатики,информатике,,,
+history,История,history,history,истории,истории,1,1,1
+social,Обществознание,social,history,обществознания,обществознанию,1,1,
+english,Английский язык,english,english,английского языка,английскому языку,,,
