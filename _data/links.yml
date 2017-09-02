@@ -16,5 +16,8 @@
 - url: price
   alt: Стоимость
   
+- url: reviews
+  alt: Отзывы
+  
 - url: contacts
   alt: Контакты

@@ -49,7 +49,7 @@
 
 <div class="row">    
 
-   {% if $pagesubject.programm11 or $pagesubject.programm10 or $pagesubject.programm9 %}
+   {% if $pagesubject.programm11 or $pagesubject.programm10 or $pagesubject.programm9 and page.menu==index %}
   <div class="row tab-v3">
   <div class="col-sm-3">
     <ul class="nav nav-pills nav-stacked">
@@ -59,7 +59,7 @@
       {% if $pagesubject.programm10%}
       <li><a href="#programm-10" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>К ЕГЭ для 10 класса</a></li>
       {% endif %}  
-      {% if $pagesubject.programm9%}  
+      {% if $pagesubject.programm9 and page.menu==index %}  
       <li><a href="#programm-9" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>К ОГЭ для 9 класса</a></li>
       {% endif %}  
       

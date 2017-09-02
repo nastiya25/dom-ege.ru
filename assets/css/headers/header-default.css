@@ -438,7 +438,7 @@ body.header-fixed-space-default {
 	.header .navbar-nav > li > a {
 		bottom: -2px;
 		position: relative;
-		padding: 9px 18px 9px 18px;
+		padding: 9px 12px 9px 12px;
 	}
 
 	.header .navbar-nav > li > a,
