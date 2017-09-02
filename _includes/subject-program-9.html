@@ -39,7 +39,7 @@
   </div>
 </div>  
  
-   {% if $pagesubject.programm11 or $pagesubject.programm10 or $pagesubject.programm9 %}
+   {% if $pagesubject.programm9 %}
   <br>
 <div class="heading heading-v1 margin-bottom-40">
         <h2 class="sale">Программа подготовки по <span class="color-green">{{ pagesubject.datp }}</span></h2>
@@ -48,19 +48,14 @@
 
 <div class="row">    
 
-   {% if $pagesubject.programm11 or $pagesubject.programm10 or $pagesubject.programm9 %}
+   {% if $pagesubject.programm9 %}
   <div class="row tab-v3">
   <div class="col-sm-3">
     <ul class="nav nav-pills nav-stacked">
       {% if $pagesubject.programm9%}
       <li class="active"><a href="#programm-9" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>К ОГЭ для 9 класса</a></li>
       {% endif %}
-      {% if $pagesubject.programm10%}      
-      <li><a href="#programm-10" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>К ЕГЭ для 10 класса</a></li>
-      {% endif %}        
-      {% if $pagesubject.programm11%}
-      <li><a href="#programm-11" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>К ЕГЭ для 11 класса</a></li>
-      {% endif %}  
+   
 
       
     </ul>
@@ -72,18 +67,6 @@
       <div class="tab-pane fade active in" id="programm-9">
         <h2>Программа подготовки к ОГЭ для 9 класса</h2>        
         {% include programms/{{ pagesubject.url }}-9.html %}
-      </div>
-      {% endif %} 
-      {% if $pagesubject.programm10%}      
-      <div class="tab-pane fade" id="programm-10">
-        <h2>Программа подготовки к ЕГЭ для 10 класса</h2>        
-        {% include programms/{{ pagesubject.url }}-10.html %}
-      </div>
-      {% endif %}      
-      {% if $pagesubject.programm11%}      
-      <div class="tab-pane fade" id="programm-11">
-        <h2>Программа подготовки к ЕГЭ для 11 класса</h2>
-        {% include programms/{{ pagesubject.url }}-11.html %}
       </div>
       {% endif %} 
        
