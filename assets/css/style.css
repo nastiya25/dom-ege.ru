@@ -221,3 +221,12 @@ select::-ms-expand {
 #timer {
 	font: 60px Tahoma;
 	}
+.intro-text{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 0 0;
+    width: 960px;
+    margin: 0 auto;
+}
