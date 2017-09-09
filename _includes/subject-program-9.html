@@ -38,12 +38,47 @@
 {% endfor %}    
   </div>
 </div>  
+<hr class="devider devider-dashed">
+<div class="row margin-bottom-40">
+  <div class="col-md-12 ">
+    <div class="title-box-v2">
+      <h2><span class="color-green">Отзывы</span> учеников</h2>
+    </div>    
+    <div id="testimonials-8" class="carousel slide testimonials testimonials-v2">
+      <div class="carousel-inner">  
+        {% for review in site.data.reviews %}
+          {% if review.subject == pagesubject.subject %}   
+            <div class="item {{review.subject-active }}">
+              <p>{{ review.review }}</p>
+              <div class="testimonial-info">
+                <span class="testimonial-author">
+                  {{ review.author-name }}
+                  <em>{{ review.author-class }}</em>
+                </span>
+              </div>
+            </div>
+          {% endif %}
+
+        {% endfor %}    
+      <div class="carousel-arrow">
+        <a class="left carousel-control" href="#testimonials-8" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="right carousel-control" href="#testimonials-8" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>  
+</div>  
+  
  
    {% if $pagesubject.programm9 %}
   <br>
-<div class="heading heading-v1 margin-bottom-40">
-        <h2 class="sale">Программа подготовки по <span class="color-green">{{ pagesubject.datp }}</span></h2>
-      </div>
+    <div class="heading heading-v1 margin-bottom-40">
+      <h2 class="sale">Программа подготовки по <span class="color-green">{{ pagesubject.datp }}</span></h2>
+    </div>
    {% endif %}
 
 <div class="row">    
