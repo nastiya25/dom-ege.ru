@@ -21,8 +21,11 @@
   {% assign cat = t[8] %}
   {% assign subjecten = t[9] %}
   {% assign description = t[10] %}
-
-      {% if teacher.subjecten == pagesubject.subject  %}
+    
+    {% assign subjects = teacher.subjecten | split: ", " %}
+    {% for sub in subjects %}
+ 
+      {% if sub == pagesubject.subject  %}
 
         <div class="col-md-4 col-sm-6 md-margin-bottom-60 teachers-cell">
           <img class="img-responsive" src="{{ site.url }}/assets/img/teachers/{{ teacher.photo }}" alt="">
@@ -34,7 +37,8 @@
           <br>
         </div>    
       {% endif %}
-
+ {% endfor %}
+    
 {% endfor %}    
   </div>
 </div>  
