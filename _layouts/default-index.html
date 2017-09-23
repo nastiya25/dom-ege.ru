@@ -34,7 +34,8 @@
 
                        <div class="col-md-4 pull-right col-sm-7 offset-col-sm-4 col-xs-12">
                           <div class="header-contact">
-                            <span><i class="fa fa-phone color-green"></i><a href="tel:+7 (495) 798-36-96"> +7 (495) 798-36-96</a></span>
+                            <span><i class="fa fa-phone color-green"></i><a href="tel:+7 (495) 798-36-96"> +7 (495) 798-36-96</a></span><br>
+                            <span class="mail"><i class="fa fa-envelope color-green"></i><a href="mailto:mydomege@gmail.com"> mydomege@gmail.com</a></span>
                             <p class="logo">Ежедневно с 10:00 до 19:00<br>м. Китай-Город<br>Сеть образовательных центров<br>Подготовка учащихся 9-11 классов к ЕГЭ и ОГЭ</p>
 
                           </div>
@@ -64,13 +65,24 @@
         <div class="col-sm-12">
           {{ content }}
           <br>
-          <div class="owl-clients-v1">
+					<!-- Owl Carousel v1 -->
+					<div class="owl-carousel-v1">
+						<div class="owl-navigation">
+							<div class="customNavigation">
+								<a class="owl-btn prev-v1"><i class="fa fa-angle-left"></i></a>
+								<a class="owl-btn next-v1"><i class="fa fa-angle-right"></i></a>
+							</div>
+						</div><!--/navigation-->
+
+						<div class="owl-slider">
             {% for img in site.data.insts %}
               <div class="item">
-                <img src="{{ site.url }}/assets/img/instlogo/{{ img.url }}">
+                <img class="img-responsive" src="{{ site.url }}/assets/img/instlogo/{{ img.url }}">
               </div>
-            {% endfor %}
-          </div>
+            {% endfor %}              
+						</div>
+					</div>
+					<!-- End Owl Carousel v1 -->       
         </div>
       </div>
     </div>

@@ -1,48 +1,15 @@
----
-layout: default-index
-menu: index
-title: Документы
----
 <link rel="stylesheet" href="{{ site.url }}/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
 <!--[if lt IE 9]><link rel="stylesheet" href="{{ site.url }}/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
 
 <div class="container content">
-  <div class="row margin-bottom-40 pricing-light">
-    <div class="title-box-v2">
-      <h2><span class="color-green">Отзывы</span> учеников</h2>
-    </div>
-    <div class="row margin-bottom-20">
-      <div class="col-md-12 ">
-        <div id="testimonials-2" class="carousel slide testimonials testimonials-v1">
-          <div class="carousel-inner">
-          {% assign reviews =  site.data.reviews | sort_by: "order" %}
-  
-          {% for rw in reviews %}
-            <div class="item active">
-              <p>{{ rw.review }}</p>
-              <div class="testimonial-info">
-                <span class="testimonial-author">
-                  {{ rw.author-name }}
-                  <em>{{ rw.author-class }}</em>
-                </span>
-              </div>
-            </div>    
-           <br><br>
-            
-          {% endfor %}							
-          </div>
-        </div>
-      </div>
-    </div>    
-  </div><!--/row-->
   <div class="row margin-bottom-40">
     <div class="title-box-v2">
-      <h2>Оставить <span class="color-green">отзыв</span></h2>
+      <h2>Записаться на <span class="color-green">курсы</span></h2>
     </div>      
   <div class="row">  
     <div class="col-md-6 col-md-offset-3">
-        <p>Отправляя отзыв, Вы соглашаетесь с <a href="http://dom-ege.ru/privacy-policy.html">политикой конфиденциальности</a>.</p>
+        <p>Отправляя заявку, Вы соглашаетесь с <a href="http://dom-ege.ru/privacy-policy.html">политикой конфиденциальности</a>.</p>
         <p>* Все поля обязательны к заполнению</p>
         <form action="http://domege.najomi.org/send.php" enctype='multipart/form-data' method='post' id="sky-form3" class="sky-form" novalidate="novalidate">
           <fieldset>
@@ -70,7 +37,7 @@ title: Документы
             </section>     
 
             <section>
-              <label class="label">Отзыв</label>
+              <label class="label">Сообщение</label>
               <label class="textarea">
                 <i class="icon-append fa fa-comment"></i>
                 <textarea rows="4" name="message" id="message"></textarea>
@@ -81,7 +48,7 @@ title: Документы
           </fieldset>
 
           <footer>
-            <button type="submit" class="button">Отправить отзыв</button>
+            <button type="submit" class="button">Отправить сообщение</button>
           </footer>
         </form>    
     

@@ -31,12 +31,15 @@ body.header-fixed-space-default {
 }
  .header-contact span,  .header-contact span a {
     display: inline-block;
-    margin-top: 7px;
-    font-size: 25px;
+    //margin-top: 7px;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Open Sans Condensed', sans-serif;
     color: #898989;
    text-decoration:none;
+}
+ .header-contact span i {
+  padding-right:6px;
 }
 .red {
     color: #f75353 !important;
