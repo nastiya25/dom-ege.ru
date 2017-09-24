@@ -18,9 +18,13 @@ var OwlCarousel = function () {
                 owl.trigger('owl.prev');
             })
 
-
+           
+            
+            
 	        //Owl Slider v2
 			var owl1 = jQuery(".owl-slider-v2").owlCarousel({
+                items : 1,
+                autoPlay : 5000,        
                 itemsDesktop : [1000,5],
                 itemsDesktopSmall : [900,4],
                 itemsTablet: [600,3],

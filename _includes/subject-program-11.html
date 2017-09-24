@@ -1,5 +1,5 @@
 <div class="container content">
-<div class="row">
+  <div class="row">
   <div class="col-md-12 text-center text-justify center-block">
       <table width="100%" border=0>
         <tr>
@@ -17,430 +17,189 @@
 
 <div class="container content">
 <div class="title-box-v2">
-  <h2><span class="color-green">О курсах ЕГЭ</span> по {{ pagesubject.datp }}</h2>
+  <h2><span class="color-green">Курсы подготовки к ЕГЭ</span> по {{ pagesubject.datp }}</h2>
 </div> 
 <div class="row">    
   <div class="col-md-6 ">
-      {{ pagesubject.about }}
+      <div class="banner-info dark margin-bottom-10">
+        <i class="rounded-x icon-pie-chart"></i>
+        <div class="overflow-h">
+          <h3>Продолжительность курса подготовки к ЕГЭ</h3>
+          <p>Для 11 класса и 10 класса (предподготовка) по одному предмету:<br> <span class="text-uppercase">8 месяцев - 32 занятия</span> (1 раз в неделю)</p>
+        </div>
+      </div>
+      <div class="banner-info dark margin-bottom-10">
+        <i class="rounded-x fa fa-hourglass-start "></i>
+        <div class="overflow-h">
+          <h3>Период занятий</h3>
+          <p>с <span class="text-uppercase color-green">1 октября</span> 2017 г. до <span class="text-uppercase color-green">25 мая</span> 2018 г.</p>
+        </div>
+      </div>
+      <div class="banner-info dark margin-bottom-10">
+        <i class="rounded-x icon-clock"></i>
+        <div class="overflow-h">
+          <h3>Длительность одного занятия</h3>
+          <p><span class="text-uppercase">2 часа 15 минут </span> (3 академических часа)</p>
+        </div>
+      </div>       
+      <div class="banner-info dark margin-bottom-10">
+        <i class="rounded-x fa fa-rub"></i>
+        <div class="overflow-h">
+          <h3>Стоимость</h3>
+          <p>от <span class="text-uppercase strong">5 610</span> руб./месяц<br> <a href="price.html">Подробнее о стоимости курса</a></p>
+        </div>
+      </div>  
+      <div class="banner-info dark margin-bottom-10">
+        <i class="rounded-x icon-users"></i>
+        <div class="overflow-h">
+          <h3>Численность групп</h3>
+          <p><a href="about-us.html" class="text-uppercase">От 4 до 8 человек</a></p>
+        </div>
+      </div>     
+    </div>    
+    <div class="col-md-6" >
+					<!-- Owl Carousel v2 -->
+					<div class="owl-carousel-v2 owl-carousel-style-v1  team-v4  margin-bottom-50">
+						<h3 class="heading-md">Преподаватели</h3>
+						<div class="owl-slider-v2 teachers-table center-block">
+            {% for t in site.data.teachers %}
+
+              {% assign code = t[0] %}
+              {% assign teacher = t[1] %}
+              {% assign photo = t[2] %}
+              {% assign subject = t[3] %}
+              {% assign standing = t[4] %}
+              {% assign exp = t[5] %}
+              {% assign edu = t[6] %}
+              {% assign spec = t[7] %}
+              {% assign cat = t[8] %}
+              {% assign subjecten = t[9] %}
+              {% assign description = t[10] %}
+
+              {% assign subjects = teacher.subjecten | split: ", " %}
+                  {% for sub in subjects %}
+
+                    {% if sub == pagesubject.subject  %}              
+              
+                    <div class="item teachers-cell">
+                        <img class="img-responsive" src="{{ site.url }}/assets/img/teachers/{{ teacher.photo }}" alt="">
+                        <span>{{ teacher.name }}</span>
+                        <small>- {{ teacher.subject }} -</small>
+                        <p>Педагогический стаж: {{ teacher.standing }}</p>
+                        <p>Опыт подготовки к ЕГЭ: {{ teacher.experience }}</p>
+                        <p><a href="{{ site.url }}/pages/{{ t[0] }}.html" class="btn-u">Подробнее</a></p>
+                    </div>
+                    {% endif %}
+               {% endfor %}
+
+            {% endfor %}                  
+              
+						</div>
+
+						<div class="owl-navigation">
+							<div class="customNavigation">
+								<a class="owl-btn prev-v2"><i class="fa fa-angle-left"></i></a>
+								<a class="owl-btn next-v2"><i class="fa fa-angle-right"></i></a>
+							</div>
+						</div><!--/navigation-->
+					</div>
+					<!-- End Owl Carousel v2 -->      
+    </div>  
+ 
+</div>
+<div class="row">
+  <div class="col-md-6 text-center">
+    <p><a href="/form.html" class="btn-u btn-brd btn-u btn-u-lg btn-logo"><i class="icon-pencil"></i> Записаться на курсы</a></p>
+    <p><span class="color-green big-text">Скидка 15% </span>
+    <p>при заключении договора до 30 сентября</p>
   </div>  
+  <div class="col-md-6  text-center">
+    {% if $pagesubject.programm11%}
+    <p><a href="{{ site.url }}/programms/{{pagesubject.url}}-11.html" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Программа подготовки к ЕГЭ по {{ pagesubject.datp }} для 11 класса</a><p>
+    {% endif %} 
+    {% if $pagesubject.programm10%}      
+    <p><a href="{{ site.url }}/programms/{{pagesubject.url}}-10.html" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Программа подготовки к ЕГЭ по {{ pagesubject.datp }} для 10 класса</a><p>
+    {% endif %} 
+    {% if $pagesubject.programm9 and page.menu==index %}      
+    <p><a href="{{ site.url }}/programms/{{pagesubject.url}}-9.html" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Программа подготовки к ОГЭ по {{ pagesubject.datp }} для 9 класса</a><p>
+    {% endif %} 
+  </div>   
+</div>
+<hr class="devider devider-dashed">  
+<div class="row">    
+  <div class="col-md-6 ">
+    <div class="title-box-v2">
+      <h2><span class="color-green">О </span>курсах</h2>
+    </div>    
+  {{ pagesubject.about }}
+  </div>    
   <div class="col-md-6" >
-      <table cellpadding="7" cellspacing="0" class="table table-striped" style="margin-top:-40px;">
-          <thead>          
-          
-            <tr>
-              <th>
-              <p>&nbsp;</p>
-              </th>
-              <th>
-              <p>1 занятие</p>
-              </th>
-              <th>
-              <p>2 занятие</p>
-              </th>
-              <th>
-              <p>3 занятие</p>
-              </th>
-              <th>
-              <p>4 занятие</p>
-              </th>
-            </tr>
-          </thead> 
-          <tbody>
-            <tr>
-              <td>
-              <p>Понедельник</p>
-              </td>              
-              <td>
-              <p>&nbsp;</p>
-              </td>
-              <td>
-              <p>&nbsp;</p>
-              </td>              
-              <td>
-              <p>16:15-18:30</p>
-              </td>
-              <td>
-              <p>18:45-21:00</p>
-              </td>
+    <div class="title-box-v2">
+      <h2><span class="color-green">Отзывы</span> учеников</h2>
+    </div>
+      <div id="testimonials-8" class="carousel slide testimonials testimonials-v2">
+        <div class="carousel-inner">  
+          {% for review in site.data.reviews %}
+            {% if review.subject == pagesubject.subject %}   
+              <div class="item {{review.subject-active }}">
+                <p>{{ review.review }}</p>
+                <div class="testimonial-info">
+                  <span class="testimonial-author">
+                    {{ review.author-name }}
+                    <em>{{ review.author-class }}</em>
+                  </span>
+                </div>
+              </div>
+            {% endif %}
 
-            </tr>
-            <tr>
-              <td>
-              <p>Вторник</p>
-              </td>              
-              <td>
-              <p>&nbsp;</p>
-              </td>
-              <td>
-              <p>&nbsp;</p>
-              </td>              
-
-              <td>
-              <p>16:15-18:30</p>
-              </td>
-              <td>
-              <p>18:45-21:00</p>
-              </td>
-
-            </tr>
-            <tr>
-              <td>
-              <p>Среда</p>
-              </td>              
-              <td>
-              <p>&nbsp;</p>
-              </td>
-              <td>
-              <p>&nbsp;</p>
-              </td>              
-
-              <td>
-              <p>16:15-18:30</p>
-              </td>
-              <td>
-              <p>18:45-21:00</p>
-              </td>
-
-            </tr>
-            <tr>
-              <td>
-              <p>Четверг</p>
-              </td>              
-              <td>
-              <p>&nbsp;</p>
-              </td>
-              <td>
-              <p>&nbsp;</p>
-              </td>              
-
-              <td>
-              <p>16:15-18:30</p>
-              </td>
-              <td>
-              <p>18:45-21:00</p>
-              </td>
-
-            </tr>
-            <tr>
-              <td>
-              <p>Пятница</p>
-              </td>              
-              <td>
-              <p>&nbsp;</p>
-              </td>
-              <td>
-              <p>&nbsp;</p>
-              </td>
-
-              <td>
-              <p>16:15-18:30</p>
-              </td>
-              <td>
-              <p>18:45-21:00</p>
-              </td>          
-            </tr>
-            <tr>
-              <td>
-              <p>Суббота</p>
-              </td>
-              <td>
-              <p>10:30-12:45</p>
-              </td>
-              <td>
-              <p>13:00-15:15</p>
-              </td>
-              <td>
-              <p>15:30-17:45</p>
-              </td>
-              <td>
-              <p>18:00-20:15</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              <p>Воскресенье</p>
-              </td>
-              <td>
-              <p>10:30-12:45</p>
-              </td>
-              <td>
-              <p>13:00-15:15</p>
-              </td>
-              <td>
-              <p>15:30-17:45</p>
-              </td>
-              <td>
-              <p>18:00-20:15</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          {% endfor %}    
+        <div class="carousel-arrow">
+          <a class="left carousel-control" href="#testimonials-8" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="right carousel-control" href="#testimonials-8" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>    
   </div>   
 </div>  
 <hr class="devider devider-dashed">
-<div class="row">
+<div class="row">    
   <div class="col-md-6 ">
-        <div class="banner-info dark margin-bottom-10">
-          <i class="rounded-x icon-pie-chart"></i>
-          <div class="overflow-h">
-            <h3>Продолжительность курса подготовки к ЕГЭ</h3>
-            <p>Для 11 класса и 10 класса (предподготовка) по одному предмету:<br> <span class="text-uppercase">8 месяцев - 32 занятия</span> (1 раз в неделю)</p>
-          </div>
-        </div>
-        <div class="banner-info dark margin-bottom-10">
-          <i class="rounded-x fa fa-hourglass-start "></i>
-          <div class="overflow-h">
-            <h3>Период занятий</h3>
-            <p>с <span class="text-uppercase color-green">1 октября</span> 2017 г. до <span class="text-uppercase color-green">25 мая</span> 2018 г.</p>
-          </div>
-        </div>
-        <div class="banner-info dark margin-bottom-10">
-          <i class="rounded-x icon-clock"></i>
-          <div class="overflow-h">
-            <h3>Длительность одного занятия</h3>
-            <p><span class="text-uppercase">2 часа 15 минут </span> (3 академических часа)</p>
-          </div>
-        </div>   
-  </div> 
-  <div class="col-md-6 ">        
-        <div class="margin-bottom-20"></div>
-        <div class="banner-info dark margin-bottom-10">
-          <i class="rounded-x fa fa-rub"></i>
-          <div class="overflow-h">
-            <h3>Стоимость</h3>
-            <p>от <span class="text-uppercase strong">5 610</span> руб./месяц<br> <a href="price.html">Подробнее о стоимости курса</a></p>
-          </div>
-        </div>
-        <div class="banner-info dark margin-bottom-10">
-          <i class="rounded-x icon-users"></i>
-          <div class="overflow-h">
-            <h3>Численность групп</h3>
-            <p><a href="about-us.html" class="text-uppercase">От 4 до 8 человек</a></p>
-          </div>
-        </div> 
-        <div class="col-md-12">
-          <a href="/form.html" class="btn-u btn-brd btn-u btn-u-lg btn-logo"><i class="icon-pencil"></i> Записаться на курсы</a>
-        </div> 
-    
-  </div>
- <div class="margin-bottom-40"></div>
-  
-</div>  
-  
-  <div class="title-box-v2">
-    <h2><span class="color-green">П</span>реподаватели {{ pagesubject.rodp }}</h2>
-  </div>
-
-  <div class="row team-v4 ">
-  <div class="teachers-table center-block ">
-{% for t in site.data.teachers %}
-
-  {% assign code = t[0] %}
-  {% assign teacher = t[1] %}
-  {% assign photo = t[2] %}
-  {% assign subject = t[3] %}
-  {% assign standing = t[4] %}
-  {% assign exp = t[5] %}
-  {% assign edu = t[6] %}
-  {% assign spec = t[7] %}
-  {% assign cat = t[8] %}
-  {% assign subjecten = t[9] %}
-  {% assign description = t[10] %}
-
-    {% assign subjects = teacher.subjecten | split: ", " %}
-    {% for sub in subjects %}
- 
-      {% if sub == pagesubject.subject  %}
-
-        <div class="col-md-4 col-sm-6 md-margin-bottom-60 teachers-cell">
-          <img class="img-responsive" src="{{ site.url }}/assets/img/teachers/{{ teacher.photo }}" alt="">
-          <span>{{ teacher.name }}</span>
-          <small>- {{ teacher.subject }} -</small>
-          <p>Педагогический стаж: {{ teacher.standing }}</p>
-          <p>Опыт подготовки к ЕГЭ: {{ teacher.experience }}</p>
-          <p><a href="{{ site.url }}/pages/{{ t[0] }}.html" class="btn-u">Подробнее</a></p>
-          <br>
-        </div>    
-      {% endif %}
- {% endfor %}
-
-{% endfor %}    
-  </div>
-</div> 
-<hr class="devider devider-dashed">
-<div class="row margin-bottom-40">
-  <div class="col-md-12 ">
     <div class="title-box-v2">
-      <h2><span class="color-green">Отзывы</span> учеников</h2>
+      <h2><span class="color-green">Немного о ЕГЭ </span> {{ pagesubject.datp }}</h2>
     </div>    
-    <div id="testimonials-8" class="carousel slide testimonials testimonials-v2">
-      <div class="carousel-inner">  
-        {% for review in site.data.reviews %}
-          {% if review.subject == pagesubject.subject %}   
-            <div class="item {{review.subject-active }}">
-              <p>{{ review.review }}</p>
-              <div class="testimonial-info">
-                <span class="testimonial-author">
-                  {{ review.author-name }}
-                  <em>{{ review.author-class }}</em>
-                </span>
-              </div>
-            </div>
+      {{ pagesubject.about-ege }}
+  </div>    
+  <div class="col-md-6" >
+    {% if $pagesubject.math %}    
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-p-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button">Профильный уровень. Демоверсия экзаменационной работы</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-p-code.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Профильный уровень. Кодификатор</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-p-spec.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Профильный уровень. Спецификация</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-b-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button">Базовый уровень. Демоверсия экзаменационной работы</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-b-code.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Базовый уровень. Кодификатор</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-b-spec.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Базовый уровень. Спецификация</a><p>
+        {% else %}
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Демоверсия экзаменационной работы</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-code.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Кодификатор</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-spec.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Спецификация</a><p>      
+    {% endif %}
+    {% if $pagesubject.english %}    
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-u-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Устная часть. Демоверсия экзаменационной работы</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-audio-demo.mp3" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-headphones" aria-hidden="true"></i> Аудирование. Демоверсия</a><p>   
+    {% endif %}
+    {% if $pagesubject.russian %}    
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-russian-paronims.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+    Словарик паронимов</a><p>
+        <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-slovnik.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+    Словник орфоэпический</a><p>   
+    {% endif %}    
+        <p class="small">Источник материалов: <a href="http://www.fipi.ru/ege-i-gve-11/demoversii-specifikacii-kodifikatory" class="text-primary">http://www.fipi.ru/ege-i-gve-11/demoversii-specifikacii-kodifikatory</a></p>
+
+  </div>   
+</div> 
           {% endif %}
 
-        {% endfor %}    
-      <div class="carousel-arrow">
-        <a class="left carousel-control" href="#testimonials-8" data-slide="prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="right carousel-control" href="#testimonials-8" data-slide="next">
-          <i class="fa fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>  
-</div>  
-
-  
-<hr class="devider devider-dashed">
-
-<div class="row">    
-
-   {% if $pagesubject.programm11 or $pagesubject.programm10 or $pagesubject.programm9 and page.menu==index %}
-  <div class="row tab-v3">
-  <div class="col-sm-3">
-    <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#about-courses" data-toggle="tab" aria-expanded="true"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Немного о ЕГЭ по {{ pagesubject.datp }} </a></li>      
-      {% if $pagesubject.programm11%}
-      <li class><a href="#programm-11" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>Программа для 11 класса</a></li>
-      {% endif %}
-      {% if $pagesubject.programm10%}
-      <li><a href="#programm-10" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>Программа для 10 класса</a></li>
-      {% endif %}  
-      {% if $pagesubject.programm9 and page.menu==index %}  
-      <li><a href="#programm-9" data-toggle="tab" aria-expanded="true"><i class="fa fa-map-o"></i>Программа для 9 класса</a></li>
-      {% endif %}  
-      <li><a href="#info-sprav" data-toggle="tab" aria-expanded="true"><i class="fa fa-file-text-o" aria-hidden="true"></i>Справочный материал</a></li>
-      <li><a href="#form-courses" data-toggle="tab" aria-expanded="true"><i class="icon-pencil"></i>Записаться на курсы</a></li>
-      
-    </ul>
-  </div>
-  <div class="col-sm-9">
-    <div class="tab-content">
-      {% if $pagesubject.programm11%}
-      <div class="tab-pane fade active in" id="about-courses">
-        <h2>Немного о ЕГЭ по <span class="color-green">{{ pagesubject.datp }}</span></h2>        
-          {{ pagesubject.about-ege }}
-      </div>      
-      <div class="tab-pane fade in" id="programm-11">
-        <h2>Программа подготовки к ЕГЭ для 11 класса</h2>        
-        {% include programms/{{ pagesubject.url }}-11.html %}
-      </div>
-      {% endif %} 
-      {% if $pagesubject.programm10%}      
-      <div class="tab-pane fade" id="programm-10">
-        <h2>Программа подготовки к ЕГЭ для 10 класса</h2>        
-        {% include programms/{{ pagesubject.url }}-10.html %}
-      </div>
-      {% endif %} 
-      {% if $pagesubject.programm9%}      
-      <div class="tab-pane fade" id="programm-9">
-        <h2>Программа подготовки к ОГЭ для 9 класса</h2>        
-        {% include programms/{{ pagesubject.url }}-9.html %}
-      </div>
-      {% endif %}  
-      <div class="tab-pane fade in" id="info-sprav">
-        {% if $pagesubject.math %}    
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-p-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button">Профильный уровень. Демоверсия экзаменационной работы</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-p-code.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Профильный уровень. Кодификатор</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-p-spec.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Профильный уровень. Спецификация</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-b-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button">Базовый уровень. Демоверсия экзаменационной работы</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-b-code.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Базовый уровень. Кодификатор</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-b-spec.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Базовый уровень. Спецификация</a><p>
-            {% else %}
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Демоверсия экзаменационной работы</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-code.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Кодификатор</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-spec.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-list" aria-hidden="true"></i> Спецификация</a><p>      
-        {% endif %}
-        {% if $pagesubject.english %}    
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-u-demo.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-briefcase" aria-hidden="true"></i> Устная часть. Демоверсия экзаменационной работы</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-audio-demo.mp3" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-headphones" aria-hidden="true"></i> Аудирование. Демоверсия</a><p>   
-        {% endif %}
-        {% if $pagesubject.russian %}    
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-russian-paronims.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-        Словарик паронимов</a><p>
-            <p><a href="{{ site.url }}/assets/img/programms/{{pagesubject.url}}-slovnik.pdf" class="btn-u btn-u-lg btn-block btn-u-dark-blue" type="button"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-        Словник орфоэпический</a><p>   
-        {% endif %}    
-            <p class="small">Источник материалов: <a href="http://www.fipi.ru/ege-i-gve-11/demoversii-specifikacii-kodifikatory" class="text-primary">http://www.fipi.ru/ege-i-gve-11/demoversii-specifikacii-kodifikatory</a></p>
-      </div>
-      <div class="tab-pane fade" id="form-courses">
-          <link rel="stylesheet" href="{{ site.url }}/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
-          <link rel="stylesheet" href="{{ site.url }}/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
-          <!--[if lt IE 9]><link rel="stylesheet" href="{{ site.url }}/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
-
-            <div class="row margin-bottom-40">
-              <div class="title-box-v2">
-                <h2>Записаться на <span class="color-green">курсы</span></h2>
-              </div>      
-            <div class="row">  
-              <div class="col-md-10 col-md-offset-1">
-                  <p>Отправляя заявку, Вы соглашаетесь с <a href="http://dom-ege.ru/privacy-policy.html">политикой конфиденциальности</a>.</p>
-                  <p>* Все поля обязательны к заполнению</p>
-                  <form action="http://domege.najomi.org/send.php" enctype='multipart/form-data' method='post' id="sky-form3" class="sky-form" novalidate="novalidate">
-                    <fieldset>
-                      <div class="row">
-                      <section>
-                          <label class="label">Имя</label>
-                          <label class="input">
-                            <i class="icon-append fa fa-user"></i>
-                            <input type="text" name="name" id="name">
-                          </label>
-                        </section>
-                      <section>
-                          <label class="label">E-mail</label>
-                          <label class="input">
-                            <i class="icon-append fa fa-envelope-o"></i>
-                            <input type="email" name="email" id="email">
-                          </label>
-                        </section>
-                      <section>
-                          <label class="label">Телефон</label>
-                          <label class="input">
-                            <i class="icon-append fa fa-phone"></i>
-                            <input type="text" name="phone" id="phone">
-                          </label>
-                      </section>     
-
-                      <section>
-                        <label class="label">Сообщение</label>
-                        <label class="textarea">
-                          <i class="icon-append fa fa-comment"></i>
-                          <textarea rows="4" name="message" id="message"></textarea>
-                        </label>
-                      </section>
-                       </div>
-
-                    </fieldset>
-
-                    <footer>
-                      <button type="submit" class="button">Отправить сообщение</button>
-                    </footer>
-                  </form>    
-
-
-              </div>
-            </div>
-
-      </div>      
-    </div>
-  </div>
-</div>  
-{% endif %}       
-  
-   
-</div>
-   {% endif %} 
-{% endfor %}    
-</div>
+        {% endfor %}   
