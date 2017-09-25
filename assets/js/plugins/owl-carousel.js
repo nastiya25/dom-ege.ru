@@ -29,7 +29,9 @@ var OwlCarousel = function () {
                 itemsDesktopSmall : [900,4],
                 itemsTablet: [600,3],
                 itemsMobile : [479,2],
-                slideSpeed: 1000
+                slideSpeed: 1000,
+                 rewindSpeed : 10
+        
             });
             jQuery(".next-v2").click(function(){
                 owl1.trigger('owl.next');
